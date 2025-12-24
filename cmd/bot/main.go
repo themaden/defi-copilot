@@ -33,7 +33,7 @@ func main() {
 	aiService := ai.NewService(os.Getenv("OPENAI_API_KEY"))
 	walletSecret := os.Getenv("WALLET_SECRET_KEY")
 	if walletSecret == "" {
-		walletSecret = "12345678901234567890123456789012"
+		walletSecret = ""
 	}
 	walletService := wallet.NewService(walletSecret)
 
